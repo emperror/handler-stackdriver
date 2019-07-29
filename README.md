@@ -21,10 +21,33 @@ go get emperror.dev/handler/stackdriver
 package main
 
 import (
-	stackdriverhandler "emperror.dev/handler/stackdriver"
+	"context"
+	
+	"cloud.google.com/go/errorreporting"
+	"emperror.dev/handler/stackdriver"
+	"golang.org/x/oauth2/google"
+	"google.golang.org/api/option"
 )
 
 func main() {
+	// Create the client
+	ctx := context.Background()
+	client, err := errorreporting.NewClient(
+		ctx,
+		"my-gcp-project",
+		errorreporting.Config{
+			ServiceName:    "myservice",
+			ServiceVersion: "v1.0",
+		},
+		option.WithCredentialsFile("path/to/google_credentials.json"),
+	)
+	if err != nil {
+		// TODO: handle error
+	}
+	defer client.Close()
+
+	// Create the handler
+	_ = stackdriver.New(client)
 }
 ```
 
