@@ -19,6 +19,7 @@ func ExampleNew() {
 	})
 	if err != nil {
 		// TODO: handle error
+		return
 	}
 	defer client.Close()
 
@@ -44,6 +45,7 @@ func ExampleNew_withCredentials() {
 	)
 	if err != nil {
 		// TODO: handle error
+		return
 	}
 	defer client.Close()
 
