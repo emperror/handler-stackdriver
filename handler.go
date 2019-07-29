@@ -23,6 +23,7 @@ func New(client *errorreporting.Client) *Handler {
 	}
 }
 
+// Handle sends an error to Stackdriver.
 func (h *Handler) Handle(err error) {
 	entry := errorreporting.Entry{
 		Error: err,
