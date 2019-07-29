@@ -10,8 +10,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 
 
-## [0.1.0] - 2019-07-29
+## 0.1.0 - 2019-07-29
+
+- Initial release
 
 
 [Unreleased]: https://github.com/emperror/handler-stackdriver/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/emperror/handler-stackdriver/compare/v0.0.0...v0.1.0
