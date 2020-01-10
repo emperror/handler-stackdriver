@@ -3,9 +3,8 @@ module emperror.dev/handler/stackdriver
 go 1.12
 
 require (
-	cloud.google.com/go v0.44.3
-	emperror.dev/errors v0.4.2
-	github.com/stretchr/testify v1.3.0 // indirect
-	golang.org/x/oauth2 v0.0.0-20190604053449-0f29369cfe45
-	google.golang.org/api v0.9.0
+	cloud.google.com/go v0.51.0
+	emperror.dev/errors v0.6.0
+	golang.org/x/oauth2 v0.0.0-20200107190931-bf48bf16ab8d
+	google.golang.org/api v0.15.0
 )
