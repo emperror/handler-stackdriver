@@ -10,5 +10,8 @@ linters:
         - funlen
         - wsl
 
+        # TODO: fixme
+        - godox
+
 service:
     golangci-lint-version: 1.21.x
