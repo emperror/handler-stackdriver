@@ -3,6 +3,7 @@ package stackdriver
 
 import (
 	"bytes"
+	"context"
 	"fmt"
 	"runtime"
 	"strings"
@@ -60,6 +61,11 @@ func (h *Handler) formatStack(stackTrace errors.StackTrace) []byte {
 	buf.WriteString(strings.Join(lines, "\n"))
 
 	return buf.Bytes()
+}
+
+// HandleContext sends an error to Stackdriver.
+func (h *Handler) HandleContext(_ context.Context, err error) {
+	h.Handle(err)
 }
 
 // Close calls Close on the underlying client.
