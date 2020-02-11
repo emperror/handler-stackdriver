@@ -5,7 +5,7 @@
 [![Go Report Card](https://goreportcard.com/badge/emperror.dev/handler/stackdriver?style=flat-square)](https://goreportcard.com/report/emperror.dev/handler/stackdriver)
 [![GolangCI](https://golangci.com/badges/github.com/emperror/handler-stackdriver.svg)](https://golangci.com/r/github.com/emperror/handler-stackdriver)
 [![Go Version](https://img.shields.io/badge/go%20version-%3E=1.12-61CFDD.svg?style=flat-square)](https://github.com/emperror/errors)
-[![GoDoc](http://img.shields.io/badge/godoc-reference-5272B4.svg?style=flat-square)](https://godoc.org/emperror.dev/handler/stackdriver)
+[![GoDoc](http://img.shields.io/badge/godoc-reference-5272B4.svg?style=flat-square)](https://pkg.go.dev/emperror.dev/handler/stackdriver)
 
 **Error handler integration for [Stackdriver](https://cloud.google.com/stackdriver/)**
 
