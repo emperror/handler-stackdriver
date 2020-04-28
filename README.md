@@ -1,11 +1,11 @@
 # Stackdriver error handler
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/emperror/handler-stackdriver/CI?style=flat-square)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/emperror/handler-stackdriver/CI?style=flat-square)](https://github.com/emperror/handler-stackdriver/actions?query=workflow%3ACI)
 [![Codecov](https://img.shields.io/codecov/c/github/emperror/handler-stackdriver?style=flat-square)](https://codecov.io/gh/emperror/handler-stackdriver)
 [![Go Report Card](https://goreportcard.com/badge/emperror.dev/handler/stackdriver?style=flat-square)](https://goreportcard.com/report/emperror.dev/handler/stackdriver)
-[![GolangCI](https://golangci.com/badges/github.com/emperror/handler-stackdriver.svg)](https://golangci.com/r/github.com/emperror/handler-stackdriver)
-[![Go Version](https://img.shields.io/badge/go%20version-%3E=1.12-61CFDD.svg?style=flat-square)](https://github.com/emperror/errors)
-[![GoDoc](http://img.shields.io/badge/godoc-reference-5272B4.svg?style=flat-square)](https://pkg.go.dev/emperror.dev/handler/stackdriver)
+![Go Version](https://img.shields.io/badge/go%20version-%3E=1.12-61CFDD.svg?style=flat-square)
+[![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/mod/emperror.dev/handler/stackdriver)
+
 
 **Error handler integration for [Stackdriver](https://cloud.google.com/stackdriver/)**
 

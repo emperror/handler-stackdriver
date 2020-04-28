@@ -8,10 +8,7 @@ linters:
     enable-all: true
     disable:
         - funlen
-        - wsl
+        - gomnd
+        - testpackage
 
-        # TODO: fixme
         - godox
-
-service:
-    golangci-lint-version: 1.21.x

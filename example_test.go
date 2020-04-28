@@ -17,10 +17,12 @@ func ExampleNew() {
 		ServiceName:    "myservice",
 		ServiceVersion: "v1.0",
 	})
+
 	if err != nil {
 		// TODO: handle error
 		return
 	}
+
 	defer client.Close()
 
 	// Create the handler
@@ -43,10 +45,12 @@ func ExampleNew_withCredentials() {
 		// OR
 		// option.WithCredentialsFile("path/to/google_credentials.json"),
 	)
+
 	if err != nil {
 		// TODO: handle error
 		return
 	}
+
 	defer client.Close()
 
 	// Create the handler

@@ -23,9 +23,11 @@ func TestHandler(t *testing.T) {
 			t.Fatal(err)
 		},
 	})
+
 	if err != nil {
 		t.Fatal(err)
 	}
+
 	defer func() {
 		err := client.Close()
 		if err != nil {

@@ -48,6 +48,7 @@ func (h *Handler) formatStack(stackTrace errors.StackTrace) []byte {
 
 	// format each frame of the stack to match runtime.Stack's format
 	var lines []string
+
 	for _, frame := range stackTrace {
 		pc := uintptr(frame) - 1
 		fn := runtime.FuncForPC(pc)
